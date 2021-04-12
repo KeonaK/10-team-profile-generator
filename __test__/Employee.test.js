@@ -1,6 +1,7 @@
 const Employee = require("../lib/Employee");
 
 describe("Employee", () => {
+
     it("should return a name when I pass a name to employee", () => {
         //arrange
         let employeeName = "Keona"
@@ -29,7 +30,7 @@ describe("Employee", () => {
         let newEmployeeEmail = new Employee("","",employeeEmail);
 
       //assert
-        expect(newEmployeEmail.email).toBe("name@email.com");
+        expect(newEmployeeEmail.email).toBe("name@email.com");
     });
 
     it("should return a role when I pass a role to employee", () => {
