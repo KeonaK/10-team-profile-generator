@@ -5,6 +5,7 @@ describe("Employee", () => {
         //arrange
         let employeeName = "Keona"
         //act
+        // building the Employee object?
         let newEmployee = new Employee(employeeName);
 
       //assert
@@ -15,7 +16,7 @@ describe("Employee", () => {
         //arrange
         let employeeId = "1"
         //act
-        let newEmployeeId = new Employee(employeeId);
+        let newEmployeeId = new Employee("",employeeId);
 
       //assert
         expect(newEmployeeId.id).toBe("1");
@@ -25,19 +26,19 @@ describe("Employee", () => {
         //arrange
         let employeeEmail = "name@email.com"
         //act
-        let newEmployeeEmail = new Employee(employeeEmail);
+        let newEmployeeEmail = new Employee("","",employeeEmail);
 
       //assert
         expect(newEmployeEmail.email).toBe("name@email.com");
     });
 
     it("should return a role when I pass a role to employee", () => {
-        //arrange
-        let employeeName = "Keona"
+       
         //act
-        let newEmployeeRole = new Employee(employeeName);
+        let newEmployeeRole = new Employee("","","");
 
       //assert
+      //getRole() returns 'Employee'
         expect(newEmployeeRole.getRole()).toBe("Employee");
     });
 })
