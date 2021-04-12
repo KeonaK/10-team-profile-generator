@@ -15,12 +15,12 @@ describe("Manager", () => {
 
     it("should return an id when I pass an id to Manager", () => {
         //arrange
-        let managerId = "3"
+        let managerId = "4"
         //act
         let newManagerId = new Manager("",managerId);
 
       //assert
-        expect(newManagerId.id).toBe("3");
+        expect(newManagerId.id).toBe("4");
     });
 
     it("should return an email when I pass an email to Manager", () => {
